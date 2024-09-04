@@ -116,7 +116,7 @@ class AliyunSMS extends NotificationProvider {
             data.push(`${encodeURIComponent(key)}=${value}`);
         }
 
-        let StringToSign = `POST&${encodeURIComponent("/")}&${encodeURIComponent(data.join("&"))}`;
+        let StringToSign = `POST&$/&${encodeURIComponent(data.join("&"))}`;
         return Crypto
             .createHmac("sha1", `${AccessKeySecret}&`)
             .update(Buffer.from(StringToSign))
