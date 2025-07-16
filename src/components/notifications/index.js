@@ -1,6 +1,7 @@
 import Alerta from "./Alerta.vue";
 import AlertNow from "./AlertNow.vue";
 import AliyunSMS from "./AliyunSms.vue";
+import TencentCloudSMS from "./TencentCloudSms.vue";
 import Apprise from "./Apprise.vue";
 import Bark from "./Bark.vue";
 import Bitrix24 from "./Bitrix24.vue";
@@ -84,6 +85,7 @@ const NotificationFormList = {
     "alerta": Alerta,
     "AlertNow": AlertNow,
     "AliyunSMS": AliyunSMS,
+    "TencentCloudSMS": TencentCloudSMS,
     "apprise": Apprise,
     "Bark": Bark,
     "Bitrix24": Bitrix24,

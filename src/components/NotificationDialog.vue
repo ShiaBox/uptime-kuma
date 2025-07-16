@@ -175,6 +175,7 @@ export default {
             // Put notifications here if it's not supported in most regions or its documentation is not in English
             let regionalList = {
                 "AliyunSMS": "AliyunSMS (阿里云短信服务)",
+                "TencentCloudSMS": "TencentCloudSMS (腾讯云短信服务)",
                 "DingDing": "DingDing (钉钉自定义机器人)",
                 "Feishu": "Feishu (飞书)",
                 "FlashDuty": "FlashDuty (快猫星云)",

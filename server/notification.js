@@ -3,6 +3,7 @@ const { log } = require("../src/util");
 const Alerta = require("./notification-providers/alerta");
 const AlertNow = require("./notification-providers/alertnow");
 const AliyunSms = require("./notification-providers/aliyun-sms");
+const TencentCloudSMS = require("./notification-providers/tencentcloud-sms");
 const Apprise = require("./notification-providers/apprise");
 const Bark = require("./notification-providers/bark");
 const Bitrix24 = require("./notification-providers/bitrix24");
@@ -97,6 +98,7 @@ class Notification {
             new Alerta(),
             new AlertNow(),
             new AliyunSms(),
+            new TencentCloudSMS(),
             new Apprise(),
             new Bark(),
             new Bitrix24(),
