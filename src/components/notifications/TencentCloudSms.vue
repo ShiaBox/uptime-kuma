@@ -50,7 +50,11 @@
 
         <div class="mb-3">
             <label for="tencentcloud-sms-region" class="form-label">Region</label>
-            <input id="tencentcloud-sms-region" v-model="notification.region" type="text" class="form-control" required>
+            <select id="tencentcloud-sms-region" v-model="notification.region" class="form-control" required>
+                <option value="ap-beijing">华北地区（北京）</option>
+                <option value="ap-guangzhou">华南地区（广州）</option>
+                <option value="ap-nanjing">华东地区（南京）</option>
+            </select>
             <div class="form-text">
                 {{ $t("tencentcloudSmsRegionDescription") }}
             </div>
